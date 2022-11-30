@@ -25,7 +25,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(
   cors({
-    origin: "https://animated-pika-2330c5.netlify.app",
+    origin: "http://animated-pika-2330c5.netlify.app",
     methods: "GET,POST,PUT,DELETE",
     credentials: true,
   })
