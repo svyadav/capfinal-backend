@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const passport = require("passport");
 
-const CLIENT_URL = "http://animated-pika-2330c5.netlify.app";
+const CLIENT_URL = "https://animated-pika-2330c5.netlify.app";
 
 router.get("/login/success", (req, res) => {
   if (req.user) {
