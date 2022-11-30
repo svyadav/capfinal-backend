@@ -29,7 +29,7 @@ router.get("/",validate, async (req, res) => {
 
 router.get('/userdetails',async(req,res)=>{
   try{
-    let user=await Users.find().toArrray()
+    let user=await Users.find()
      if(user){
       res.send({
         statusCode:200,
