@@ -37,7 +37,7 @@ router.get('/test', (req, res) => {
 router.get(
   "/google/callback",
   passport.authenticate("google", {
-    successRedirect: `${CLIENT_URL}home`,
+    successRedirect: `${CLIENT_URL}/home`,
     failureRedirect: "/login/failed",
   })
 );
