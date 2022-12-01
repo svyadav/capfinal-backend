@@ -16,7 +16,7 @@ var authRouter = require('./routes/auth');
 var app = express();
 
 connectToMongo();
-
+app.enable("trust proxy");
 app.use(
   cookieSession({ name: "session", keys: [process.env.SESSION_KEY], maxAge: 24 * 60 * 60 * 1000 })
 );
