@@ -5,7 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const passport = require("passport");
 const cors = require("cors");
-const cookieSession = require("cookie-Session");
+const cookieSession = require("cookie-session");
 const connectToMongo = require('./database/dbConnect')
 require("./passport/passport");
 
@@ -63,7 +63,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-var port = process.env.PORT || "3000"
+const port = process.env.PORT || "3000"
 app.listen(port,()=>console.log('Server is listening',port));
 
 module.exports = app;
