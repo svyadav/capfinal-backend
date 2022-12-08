@@ -20,7 +20,7 @@ passport.use(
     {
       clientID: GOOGLE_CLIENT_ID,
       clientSecret: GOOGLE_CLIENT_SECRET,
-      callbackURL: "https://curious-monstera-6701fd.netlify.app/auth/google/callback",
+      callbackURL: "/auth/google/callback",
     },
     async (accessToken, refreshToken, profile, done) => {
       //   console.log("profile", profile);
@@ -53,7 +53,7 @@ passport.use(
     {
       clientID: GITHUB_CLIENT_ID,
       clientSecret: GITHUB_CLIENT_SECRET,
-      callbackURL: "https://curious-monstera-6701fd.netlify.app/auth/github/callback",
+      callbackURL: "/auth/github/callback",
     },
     async (accessToken, refreshToken, profile, done) => {
       //   console.log("profile", profile);
@@ -86,7 +86,7 @@ passport.use(
     {
       clientID: FACEBOOK_APP_ID,
       clientSecret: FACEBOOK_APP_SECRET,
-      callbackURL: "https://curious-monstera-6701fd.netlify.app/auth/facebook/callback",
+      callbackURL: "/auth/facebook/callback",
     },
     function (accessToken, refreshToken, profile, done) {
       console.log("profile", profile);
