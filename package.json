@@ -1,19 +1,22 @@
 {
-  "name": "backend",
-  "version": "0.0.0",
-  "private": true,
+  "name": "capfinal-backend-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon node ./bin/www"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node app.js"
   },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
+    "express": "^4.18.2",
     "bcryptjs": "^2.4.3",
     "cookie-parser": "~1.4.4",
     "cookie-session": "^2.0.0",
     "cors": "^2.8.5",
     "debug": "~2.6.9",
     "dotenv": "^16.0.3",
-    "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
     "jsonwebtoken": "^8.5.1",
@@ -26,8 +29,5 @@
     "passport-github2": "^0.1.12",
     "passport-google-oauth20": "^2.0.0",
     "validator": "^13.7.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.20"
   }
 }
